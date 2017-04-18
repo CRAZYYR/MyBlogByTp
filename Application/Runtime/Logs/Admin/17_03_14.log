@@ -1,0 +1,1427 @@
+[ 2017-03-14T19:42:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `hd_user` WHERE `account` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2017-03-14T19:42:34+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.007693s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007877s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0718s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.254203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.254382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2017-03-14T19:42:34+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T19:42:34+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T19:42:36+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T19:42:36+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T19:42:40+08:00 ] 127.0.0.1 /index.php/Admin/System/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0030s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001623s ]
+
+[ 2017-03-14T19:42:47+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0334s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2017-03-14T19:42:48+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0027s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-03-14T19:42:49+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003236s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0047s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-03-14T19:42:56+08:00 ] 127.0.0.1 /index.php/Admin/System/editBase.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0192s ]
+SQL: UPDATE `hd_userinfo` SET `username`='帅子',`truename`='帅子',`sex`='男',`location`='浙江 杭州',`constellation`='魔羯座',`intro`='哈哈哈哈哈哈哈，累死了！' WHERE `uid` = 6 [ RunTime:0.0012s ]
+
+[ 2017-03-14T19:42:59+08:00 ] 127.0.0.1 /Admin/System/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0043s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-03-14T19:44:41+08:00 ] 127.0.0.1 /Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0032s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-03-14T19:44:42+08:00 ] 127.0.0.1 /Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0533s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2017-03-14T19:44:51+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadface.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\DocumentDP\weibo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2017-03-14T19:44:52+08:00 ] 127.0.0.1 /index.php/Admin/System/Setimage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003045s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0071s ]
+SQL: SELECT `face180`,`face80`,`face50` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `hd_userinfo` SET `face180`='6/com/weibo/face/2017-03-14/58c7d7b310ea4.jpg',`face80`='6/com/weibo/face/2017-03-14/58c7d7b310ea4.jpg',`face50`='6/com/weibo/face/2017-03-14/58c7d7b310ea4.jpg' WHERE `uid` = 6 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2017-03-14T19:44:55+08:00 ] 127.0.0.1 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0064s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2017-03-14T20:40:41+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0388s ]
+SQL: SELECT * FROM `hd_user` WHERE `account` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0101s ]
+
+[ 2017-03-14T20:40:45+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015271s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0379s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0012s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002109s ]
+
+[ 2017-03-14T20:40:45+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:40:45+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:40:45+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:40:45+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:48:49+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0040s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2017-03-14T20:48:49+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:48:49+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:48:49+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:48:49+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0033s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0051s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:48+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:49+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T20:59:49+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:02:01+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hd_user` WHERE `account` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-03-14T21:02:04+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0304s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0250s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2017-03-14T21:02:04+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:02:04+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:35+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0076s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002777s ]
+
+[ 2017-03-14T21:05:35+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:35+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:37+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002567s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0037s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0044s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2017-03-14T21:05:37+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:37+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:39+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0023s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-03-14T21:05:39+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:05:39+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:10+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002039s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0043s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2017-03-14T21:08:10+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:10+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:12+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0024s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-03-14T21:08:12+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:12+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:13+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0024s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2017-03-14T21:08:13+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:13+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:14+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0031s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-03-14T21:08:14+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:14+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:14+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0025s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2017-03-14T21:08:15+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:15+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:15+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0024s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-03-14T21:08:15+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:15+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:22+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0044s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2017-03-14T21:08:23+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:23+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:24+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0027s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2017-03-14T21:08:24+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:24+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:25+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0026s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-03-14T21:08:25+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:25+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:25+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0025s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-03-14T21:08:26+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:26+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:26+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0028s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-03-14T21:08:26+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:26+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:29+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0103s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0027s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-03-14T21:08:29+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:08:29+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:50+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0037s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2017-03-14T21:09:50+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:50+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:53+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0028s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2017-03-14T21:09:53+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:53+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:56+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0028s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2017-03-14T21:09:56+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:56+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:57+08:00 ] 127.0.0.1 /Admin/Index?saytext=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0032s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-03-14T21:09:57+08:00 ] 127.0.0.1 /Admin/css/jquery-ui-1.10.1.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+ERR: 无法加载控制器:Css
+
+[ 2017-03-14T21:09:57+08:00 ] 127.0.0.1 /Admin/css/latoja.datepicker.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: 无法加载控制器:Css
+

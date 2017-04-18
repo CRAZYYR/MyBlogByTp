@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+<!-- 加载插件 -->
+<link rel="stylesheet" type="text/css" href="/Public/Uploadify/uploadify.css">
+
+	<script src="/Public/jquery-3.1.1/jquery-3.1.1.js" type="text/javascript"></script>	
+		
+		
+	<script type="text/javascript" src="/Public/Uploadify/jquery.uploadify.min.js"></script>
+
+	<script type="text/javascript" src="/Public/js/uploadpicture.js"></script>
+		<script src="__PUBLIC__/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+    var swf= "/Public/Uploadify/uploadify.swf";
+    	
+    var uploader="<?php 
+    echo U('/Admin/Common/uploadpicture'); ?>";
+    var sid='<?php echo session_id(); ?>';
+</script>
+<body>
+<form>
+<input type="file" id="pic" name="">
+</form>
+
+</body>
+</html>

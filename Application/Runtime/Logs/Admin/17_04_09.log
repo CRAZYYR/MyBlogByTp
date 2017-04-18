@@ -1,0 +1,421 @@
+[ 2017-04-09T22:44:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0584s ]
+SQL: SELECT * FROM `hd_user` WHERE `account` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0242s ]
+
+[ 2017-04-09T22:44:34+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0308s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0224s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0531s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0447s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0434s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-04-09T22:44:35+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0023s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2017-04-09T22:47:23+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2017-04-09T22:49:29+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0032s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-04-09T22:49:31+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0191s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-04-09T22:49:32+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0031s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-04-09T22:49:33+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0022s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2017-04-09T22:49:33+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0038s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2017-04-09T22:49:34+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0024s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 6  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.uid IN ('6','20','8','19','7','9') ORDER BY weibo.time desc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '54' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '55' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.turn AS turn,weibo.time AS time,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.intro AS intro,userinfo.username AS username,userinfo.face50 AS face50,picture.mini AS mini,picture.wid AS wid FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid=userinfo.uid LEFT JOIN hd_picture picture ON weibo.id=picture.wid WHERE weibo.id = '31' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_group` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hd_group` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2017-04-09T22:49:40+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-04-09T22:50:10+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\DocumentDP\weibo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2017-04-09T22:50:33+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\DocumentDP\weibo\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2017-04-09T22:50:54+08:00 ] 127.0.0.1 /index.php/Admin/Common/uploadpicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`lock` FROM `hd_user` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+

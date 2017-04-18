@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+
+	<link href="css/jquery-ui-1.10.1.css" rel="stylesheet">
+	<link href="css/latoja.datepicker.css" rel="stylesheet">
+	
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-ui-1.11.0.js"></script>
+
+	<script>
+
+	$(function() {	
+		$( ".datepicker" ).datepicker({
+			inline: true,
+			showOtherMonths: true
+		});
+	});
+	</script>
+
+	<style>
+		body {
+			font: 100% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+			margin: 0;
+			background:fff;
+		}
+
+		.no-show {
+			display: none;
+		}
+
+		h2 {
+			margin: 0 0 .5em;
+			padding: 0;
+			color: #555;
+			font-size: 1.3em;
+		}
+
+
+		/* clearfix short For modern browsers */
+		.cf:before,
+		.cf:after { content:""; display:table; }
+		.cf:after { clear:both; }
+		/* For IE 6/7 (trigger hasLayout) */
+		.cf { zoom:1; }
+	
+	</style>
+</head>
+<body>
+	<div>
+			
+				
+					<h2>Your Time!
+						
+					</h2>
+					<div class="datepicker ll-skin-latoja"></div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+[ 2017-04-04T10:08:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T10:08:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T10:18:57+08:00 ] 127.0.0.1 /Public/image/inserackbak.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-04T12:45:34+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+ERR: 无法加载模块:Rjsdcctrl
+
+[ 2017-04-04T13:08:15+08:00 ] 127.0.0.1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载模块:Index
+
+[ 2017-04-04T13:08:26+08:00 ] 127.0.0.1 /index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Index
+
+[ 2017-04-04T13:15:58+08:00 ] 127.0.0.1 /index.php/Adminwew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+ERR: 无法加载模块:Adminwew
+
+[ 2017-04-04T13:56:33+08:00 ] 127.0.0.1 /index.php/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+ERR: 无法加载模块:2
+
+[ 2017-04-04T13:56:43+08:00 ] 127.0.0.1 /index.php/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:2
+
+[ 2017-04-04T13:56:46+08:00 ] 127.0.0.1 /index.php/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:2
+
+[ 2017-04-04T13:56:56+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:16+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:17+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:17+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:17+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:18+08:00 ] 127.0.0.1 /index.php/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+ERR: 无法加载模块:3
+
+[ 2017-04-04T13:57:24+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T13:58:53+08:00 ] 127.0.0.1 /4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+ERR: 无法加载模块:4
+
+[ 2017-04-04T13:59:03+08:00 ] 127.0.0.1 /index.php/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+ERR: 无法加载模块:6
+
+[ 2017-04-04T13:59:51+08:00 ] 127.0.0.1 /index.php/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载模块:6
+
+[ 2017-04-04T14:01:06+08:00 ] 127.0.0.1 /index.php/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+ERR: 无法加载模块:6
+
+[ 2017-04-04T14:01:19+08:00 ] 127.0.0.1 /index.php/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:6
+
+[ 2017-04-04T14:01:23+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:03:32+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:03:52+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:03:55+08:00 ] 127.0.0.1 /index.php/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+ERR: 无法加载模块:7
+
+[ 2017-04-04T14:04:01+08:00 ] 127.0.0.1 /index.php/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:7
+
+[ 2017-04-04T14:04:05+08:00 ] 127.0.0.1 /index.php/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:2
+
+[ 2017-04-04T14:04:21+08:00 ] 127.0.0.1 /index.php/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:2
+
+[ 2017-04-04T14:04:29+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:04:30+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:05:59+08:00 ] 127.0.0.1 /index.php/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:5
+
+[ 2017-04-04T14:06:03+08:00 ] 127.0.0.1 /6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载模块:6
+
+[ 2017-04-04T14:06:07+08:00 ] 127.0.0.1 /4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块:4
+
+[ 2017-04-04T16:17:58+08:00 ] 127.0.0.1 /Public/qqface/dist/img/qq/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-04T16:18:17+08:00 ] 127.0.0.1 /Public/qqface/dist/img/qq/6.jif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-04T16:18:17+08:00 ] 127.0.0.1 /Public/qqface/dist/img/qq/1.jif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-04T16:40:54+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:42:04+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:42:08+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:46:49+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:46:57+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:56:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-04T16:57:43+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Favicon
+

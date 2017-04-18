@@ -1,0 +1,718 @@
+  
+
+<script type="text/javascript">
+
+ var swf= "/Public/Uploadify/uploadify.swf";
+  var uploader="<?php echo U('/Admin/Common/uploadpicture'); ?>";
+    var sid='<?php echo session_id(); ?>';
+</script>
+<meta charset="utf-8">
+<div class="col-md-6 ">
+	 
+	<p>有什么<font size="3" color="red">新鲜</font>事情像告诉大家？</p>
+	<form method="post" action="<?php echo U('/Admin/Index/sendWeibo'); ?>">
+
+<script type="text/javascript" src="/Public/simditor-1.0.5/scripts/js/simditor-all.js"></script>
+  	<div id="textarea"><textarea  id="editor" contenteditable="true" name="saytext" placeholder="最多输入160字！" style="resize:none;" onkeyup="checkLen(this);"  class="form-control" rows="5"></textarea>
+    </div>
+
+  
+    <script type="text/javascript"> 
+
+//tera字数限
+
+function checkLen(obj) { 
+
+var maxChars = 160;//最多字符数  
+
+if (obj.value.length > maxChars)
+{
+  obj.value = obj.value.substring(0,maxChars); 
+  showTips('你的字数已经超限!');
+
+}
+
+}
+       
+  // var editor = new Simditor({
+  //   textarea: $('#editor')
+
+  //   //optional options
+  // });
+  </script>
+<!-- 
+    <div contenteditable="true" id="editor" name="saytext" placeholder="最多输入120字！" style="resize:none;" onkeyup="checkLen(this);"  class="form-control" rows="5"></div> -->
+        <span class="col-md-4" style="margin-right: 50px;">
+
+          <input  type="file" id="pic" >
+       </span>
+       <span class="col-md-18" style="margin-top: 10px;margin-left: 10px;">
+            <input type="hidden" value="" name="mini">
+            <input style="margin-left: 10px; margin-top:10px;" id="btn" class="btn glyphicon glyphicon-picture" type="button" value=":)"/>
+         
+         
+        	<input  id="sum" style="float: right; margin-top:10px;margin-right:5px;"  class="btn btn-info" type="submit" value="发布">
+        </span>
+
+     <div   id="uploadimg" style="display: none;">
+     <img class="center-block" style="width:100px;height:100px;"  src="">
+    </div>
+		</form>
+        <!-- 代码演示 -->
+     <!--    <div class="panel panel-default" id="qq">
+                        <div class="panel-body">
+                            <span>It's a:taiyang:day, :xxx: I had a:chabei:, and feel nice~#qq_14#</span>
+                        </div>
+           </div> -->
+
+
+ <hr />
+    	<div style="margin-top: 20px;">
+    <h4><font color="blue">快涨姿势乐:</font></h4>
+    </div>
+  <hr/>
+ 
+  <?php 
+  
+  foreach($result_blog as $result_blog){
+
+      if(!$result_blog['isturn']){
+  ?>
+       
+  <!-- 微博标题 -->
+  <div class="panel panel-warning" style="margin-top:50px;">
+    <div class="panel-heading">
+    <h3 class="panel-title">名字:<?php echo $result_blog['username'];  ?></h3>
+  </div>
+<!-- 微博主题 -->
+  <div class="panel-body">
+    <div class="col-md-2 center-block">
+    <div style="margin-top:10px;">
+    <img style="width:80px;height: 80px;" src="/uploads/<?php echo $result_blog['face50'];  ?>" title="<?php echo $result_blog['username'];  ?>" class="img-circle"></div>
+    <div style="color:blue;margin-top:40px;">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="<?php echo $result_blog['intro'];  ?>">个性签名</button>
+    </div>
+    </div>
+    <!-- 中间 -->
+
+
+    <div class="col-md-10">
+
+    <div class="col-md-12" style="margin-top:0px;"><h6><font color="red">发布时间:<?php 
+    $time=$result_blog['time'];
+    echo time_formt($time);
+    ?></font></h6>
+  <p>微博:
+      <?php 
+     echo   check_Url($result_blog['content']);
+      ?></p>
+      <p>
+<?php if(!empty($result_blog['mini'])){ ?>
+       <span>
+        <p><a href="#" class="amplify">展开</a></p>
+      <img style="height:200px;width:200px;" src="/uploads/<?php echo $result_blog['mini'];  ?>" alt="...">
+     </span>
+    
+      <?php }?>
+      </p>
+
+    </div>
+    <div class="col-md-12" style="font-family:verdana"; color="red">
+ 
+    
+    </div>
+    </div>
+  </div>
+<!-- 微博脚本 -->
+
+
+      <div style="float: right;">
+        <!-- 按钮 -->
+           
+             <button type="button" class="btn btn-info  glyphicon glyphicon-headphones">阅读
+             </button>
+
+            <button id="turn_comment_ajax<?php echo $result_blog['id']; ?>" type="button" class="btn btn-info glyphicon glyphicon-edit" data-toggle="collapse" data-target="#com<?php echo $result_blog['id'];  ?>" aria-expanded="false" aria-controls="com<?php echo $result_blog['id'];  ?>" > 评论<?php echo $result_blog['comment']; ?>
+            </button>
+
+             <button type="button" class="btn btn-info glyphicon glyphicon-heart-empty"> 收藏<?php echo $result_blog['keep']; ?>
+             </button>
+
+            <button id="<?php echo $result_blog['id']; ?>" class="blog_turn btn btn-info glyphicon glyphicon-retweet" data-toggle="modal" data-target="#myModal<?php echo $result_blog['id'];  ?>"> 转发<?php echo $result_blog['turn']; ?>
+            </button>
+     
+      
+        <!-- 按钮 -->
+      </div>
+    <!-- ====加载缓冲==== -->
+      <div class="loading<?php echo $result_blog['id'];  ?>"  style="margin-top:40px;margin-left:30%;">
+   
+        <img src="/Public/image/loading.gif" width="40px" height="40px">正在加载,请稍等...
+ 
+
+      </div>
+    <!-- ====缓冲结束==== -->
+  </div>
+
+<!-- 评论开始 -->
+
+<div class="collapse" style="width: 100%;" id="com<?php echo $result_blog['id'];  ?>">
+  <div class="well" >
+
+        <!-- 评论的下拉框 -->
+            <!-- 别人的评论 -->
+       <div class="panel panel-info" style="width: 100%;">
+        <div class="panel-body text-center">
+     <h6><b>写点你的想法！</b></h6>
+        </div>
+         <!-- 别人评论结束 -->
+        <div class="panel-footer">
+        <!-- <form> -->
+   <textarea  rows="3"  style="width: 100%;font-size:20px; resize: none;"></textarea>
+  
+  <input type="checkbox" name="return">同时转发
+        <button id="submit_comment<?php echo $result_blog['id'];  ?>" style="margin-top: 10px;" class="btn btn-info">提交评论</button>
+  
+
+
+
+    <!--  </form> -->
+        </div>
+          
+        
+     
+      </div>
+           
+  
+   
+
+
+        <!-- 评论的下拉框结束 -->
+
+  </div>
+</div>
+<script type="text/javascript">
+var comurl='<?php echo U('/Admin/Index/comment'); ?>';
+$(function(){
+     var loading=".loading<?php echo $result_blog['id'];  ?>";
+     $(loading).hide();
+    var dire="#submit_comment<?php echo $result_blog['id'];  ?>";
+    // =================评论异步处理开始=====================
+      $(dire).click(function(){
+       var insert=$(this).parent();
+        var   prev1=$(this).prev().prev();
+        comt=prev1.val();
+        if (comt=='') {
+          return false;
+        }
+       var collo= {
+        comment:comt,
+        wid:<?php echo $result_blog['id'];?>,
+        isturn:$(this).prev().is(':checked') ? 1:0
+       };
+       $.post(comurl,collo,function(data){
+        
+          insert.after(data);
+            prev1.val('');
+          //  alert(data);
+        
+       },'html');
+      });
+
+     // =================评论异步处理结束=====================
+     // 
+     // 
+      // ==============ajax处理  加载缓冲============
+         var urlajax="<?php echo U('/Admin/Index/turn_comment_ajax'); ?>";
+         var wid="<?php echo $result_blog['id']; ?>";
+         var turn ="#turn_comment_ajax<?php echo $result_blog['id']; ?>";
+        $(turn).click(function(){
+   
+          var suid="#submit_comment<?php echo $result_blog['id'];  ?>";
+         //  var par=$(this).parent().parent();
+         // var loading=par.next();
+    
+            $.ajax({
+              type:'post',
+              url:urlajax,
+              data:{'wid':wid},
+              datatype:'html',
+              beforeSend:function(){
+                $(loading).show();
+              },
+              success:function(data){
+        
+        $(suid).parent().after(data);
+          
+              },
+              complete: function(){
+                 $(loading).hide();
+              }
+            });
+        });
+
+    //===============ajax处理  加载缓冲结束==========
+   });
+
+    //===============下一页缓冲处理================
+
+
+   $(document).on("click", ".clickme<?php echo $result_blog['id']; ?> dd", function(){ 
+    var  loading  =  ".loading<?php echo $result_blog['id'];  ?>";
+  var urlajax="<?php echo U('/Admin/Index/turn_comment_ajax'); ?>";
+  var page=$(this).attr('page');
+  var widd=$(this).attr('wid');
+   var suidd="#submit_comment<?php echo $result_blog['id'];  ?>";
+   $.ajax({
+              type:'post',
+              url:urlajax,
+              data:{'wid':widd,'page':page},
+              datatype:'html',
+              beforeSend:function(){
+             $(loading).show();
+            $(suidd).parent().nextAll().remove();
+              },
+              success:function(data){
+        
+            $(suidd).parent().after(data);
+
+          
+              },
+              complete: function(){
+     
+                 $(loading).hide();
+              }
+            });
+
+
+
+
+
+ }); 
+    // ==============下一页缓冲结束================
+</script>
+<!-- 评论结束 -->
+
+  <!-- 博客转发-->
+ <form name="blog_turn" action="<?php echo U('/Admin/Index/turn'); ?>" method="post">
+              <!-- Modal -->
+           <div class="modal fade" id="myModal<?php echo $result_blog['id'];  ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">转发<font color="red"><?php echo $result_blog['username'];  ?></font>的博客:</h4>
+                          </div>
+     
+       
+                 <div class="modal-body" >
+
+                     <p><h4>
+                                @<?php 
+                                echo $result_blog['username'];     echo " ";             
+                               echo   check_Url($result_blog['content']);
+                             
+                              ?></h4>
+                              </p>
+                    <textarea name="content" rows="5" id="zhuanfa_editer" style="width: 100%;font-size:20px;resize: none;" placeholder="填写你要说的话语!"></textarea>
+
+                              </div>
+                          <div class="modal-footer">
+                             <label style="margin-right:50px;">
+                        <input type="checkbox" name="comment">同时评论
+                           </label>
+                           <input class="hidden_id" type="hidden" value="" name="id">
+                            <button class="btn btn-info"  type="submit">转发</button>
+                            
+                          </div>
+
+
+
+                    </div>
+                  </div>
+              </div>
+   </form>           
+              <!-- 博客转发结束 -->
+
+    <?php } else{?>
+
+
+   <!--  =================转发=================== -->
+    <!-- 微博标题 -->
+  <div class="panel panel-warning" style="margin-top:50px;">
+    <div class="panel-heading">
+    <h3 class="panel-title">名字:<?php echo $result_blog['username'];  ?></h3>
+  </div>
+<!-- 微博主题 -->
+  <div class="panel-body">
+    <div class="col-md-2 center-block">
+    <div style="margin-top:10px;">
+    <img style="width:80px;height: 80px;" src="/uploads/<?php echo $result_blog['face50'];  ?>" title="<?php echo $result_blog['username'];  ?>" class="img-circle"></div>
+    <div style="color:blue;margin-top:40px;">
+    <p type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="<?php echo $result_blog['intro'];  ?>">个性签名</p>
+    </div>
+    </div>
+    <!-- 中间 -->
+
+
+    <div class="col-md-10">
+
+    <div class="col-md-12" style="margin-top:0px;"><h6><font color="red">发布时间:<?php 
+    $time=$result_blog['time'];
+    echo time_formt($time);
+    ?></font></h6>
+    <!-- 原创微博 -->
+    <p> <?php 
+     echo  str_replace('//','<span style="color: #ccc; font-weight: bold;">&nbsp//&nbsp</span>',check_Url($result_blog['content']));
+
+
+      ?></p>
+      <!-- =======转发微博内容======= -->
+      <div style="padding: 10px;">
+     转发 <font color="blue"><a href="/Admin/User/<?php 
+     echo $result_blog['isturn']['username'];?>">@<?php 
+    echo $result_blog['isturn']['username'];
+    ?></a></font>的微博 <p> 原创微博: <?php 
+    echo  check_Url($result_blog['isturn']['content']);
+
+    ?></p>
+
+   <?php if($result_blog['isturn']['mini']){ ?>
+      
+    <label>
+        <img  style="height:200px;width:200px;" src="/uploads/<?php echo $result_blog['isturn']['mini'];  ?>" alt="<?php echo $result_blog['isturn']['username'];?>的微博！" title="<?php echo $result_blog['isturn']['username'];?>的微博！">
+    </label>
+
+   <?php }?>   
+
+  <p class="clearfix">
+
+        <h6><font color="red">发布时间:<?php 
+        echo time_formt($result_blog['isturn']['time']);
+        ?></font>
+        </h6>
+        <div>
+          <span class="label label-default">评论(<?php  echo $result_blog['isturn']['comment'];?>)</span>
+          <span style="margin-left:5px;" class="label label-default">转发(<?php  echo $result_blog['isturn']['turn'];?>)</span>
+        </div>   
+  </p>
+  </div>
+ <!-- =======转发微博内容结束======= -->
+
+      </div>
+    
+   
+ 
+   
+    <div style="margin-top: 10px;" class="col-md-12" style="font-family:verdana"; color="red">
+    <!-- 微博标题 --><div>
+
+  <!-- Nav tabs -->
+<!--   <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#<?php echo $result_blog['id'];  ?>weibo" aria-controls="home" role="tab" data-toggle="tab">微博</a></li>
+    <li role="presentation"><a href="#<?php echo $result_blog['id'];  ?>pic" aria-controls="profile" role="tab" data-toggle="tab">图片</a></li>
+   
+ 
+  </ul> -->
+
+  <!-- Tab panes -->
+  <!-- <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="<?php echo $result_blog['id'];  ?>weibo">  <?php 
+
+
+     echo   check_Url($result_blog['content']);
+      ?>
+    </div>
+
+    <div  role="tabpanel" class="tab-pane" id="<?php echo $result_blog['id'];  ?>pic">
+  <?php if(!empty($result_blog['mini'])){ ?>
+    
+      <img style="height:200px;width:200px;" src="/uploads/<?php echo $result_blog['mini'];  ?>" alt="...">
+     
+      <?php }else{
+
+      echo "<font color='red'><center><h2>该用户尚未发布图片!</h2></center></font>";
+      } ?>
+    </div>
+
+   
+   
+  </div>
+ -->
+</div>
+    <!-- 微博标题结束 -->
+  
+    <!--   <textarea disabled="true"  style=" resize: none;width: 100%;"  rows="10"><?php echo $result_blog['content'];  ?></textarea> -->
+    
+    </div>
+    </div>
+  </div>
+<!-- 微博脚本 -->
+
+
+      <div style="float: right;">
+        <!-- 按钮 -->
+           
+             <button type="button" class="btn btn-info  glyphicon glyphicon-headphones">阅读
+             </button>
+
+            <button id="turn_comment_ajax<?php echo $result_blog['id']; ?>" type="button" class="btn btn-info glyphicon glyphicon-edit" data-toggle="collapse" data-target="#<?php echo $result_blog['id'];  ?>" aria-expanded="false" aria-controls="<?php echo $result_blog['id'];  ?>" > 评论<?php echo $result_blog['comment']; ?>
+            </button>
+<!-- 
+              实心桃心
+              glyphicon glyphicon-heart -->
+             <button type="button" class="btn btn-info glyphicon glyphicon-heart-empty">收藏<?php echo $result_blog['keep']; ?></button>
+              <button type="button" class="btn btn-info glyphicon glyphicon-heart hidden" style="color: red;">
+              收藏<?php echo $result_blog['keep']; ?>
+             </button>
+
+            <button type="button" class="btn btn-info glyphicon glyphicon-retweet" data-toggle="modal" data-target="#myModal<?php echo $result_blog['id'];  ?>"> 转发<?php echo $result_blog['turn']; ?>
+            </button>
+     
+   
+        <!-- 按钮 -->
+      </div>
+      
+
+  </div>
+                  <!-- ====加载缓冲==== -->
+      <div class="loading<?php echo $result_blog['id'];  ?>"  style="margin-top:40px;margin-left:30%;">
+   
+        <img src="/Public/image/loading.gif" width="40px" height="40px">正在加载,请稍等...
+ 
+
+      </div>
+                  <!-- ====缓冲结束==== -->
+
+
+        
+
+
+<!-- 评论开始 -->
+
+<div class="collapse" style="width: 100%;" id="<?php echo $result_blog['id'];  ?>">
+  <div class="well" >
+
+        <!-- 评论的下拉框 -->
+            <!-- 别人的评论 -->
+       <div class="panel panel-info" style="width: 100%;">
+        <div class="panel-body text-center">
+          <h6><b>写点你的想法！</b></h6>
+        </div>
+         <!-- 别人评论结束 -->
+        <div class="panel-footer">
+
+   <textarea  rows="3" id="comment_persion" style="width: 100%;font-size:20px; resize: none;"></textarea>
+      <input type="checkbox" name="return">同时转发
+        <button id="submit_comment<?php echo $result_blog['id'];  ?>" style="margin-top: 10px;"  class="btn btn-info" >提交评论</button>  
+ 
+        </div>
+    
+      </div>
+           <script type="text/javascript">
+$(function(){
+
+  var  loading  =  ".loading<?php echo $result_blog['id'];  ?>";
+   $(loading).hide();
+ 
+    var dire="#submit_comment<?php echo $result_blog['id'];  ?>";
+    // =================评论异步处理开始=====================
+      $(dire).click(function(){
+        var prev1=$(this).prev().prev();
+        comt=prev1.val();
+
+        if (comt=='') {
+          return false;
+        }
+       var insert=$(this).parent();
+       var collo= {
+        comment:comt,
+        wid:<?php echo $result_blog['id'];?>,
+        isturn:$(this).prev().is(':checked') ? 1:0
+       };
+       $.post(comurl,collo,function(data){
+
+        insert.after(data);
+           prev1.val('');
+       },'html');
+      });
+
+     // =================评论异步处理结束=====================
+     // 
+     // 
+         // ==============ajax处理  加载缓冲============
+         var urlajax="<?php echo U('/Admin/Index/turn_comment_ajax'); ?>";
+         var wid="<?php echo $result_blog['id']; ?>";
+        $('#turn_comment_ajax<?php echo $result_blog['id']; ?>').click(function(){
+          var suid="#submit_comment<?php echo $result_blog['id'];  ?>";
+       
+            $.ajax({
+              type:'post',
+              url:urlajax,
+              data:{'wid':wid},
+              datatype:'html',
+              beforeSend:function(){
+                $(loading).show();
+              },
+              success:function(data){
+        
+        $(suid).parent().after(data);
+
+          
+              },
+              complete: function(){
+     
+                 $(loading).hide();
+              }
+            });
+        });
+
+    //===============ajax处理  加载缓冲结束==========
+    //
+
+
+   });
+
+    //===============下一页缓冲处理================
+
+
+   $(document).on("click", ".clickme<?php echo $result_blog['id']; ?> dd", function(){ 
+    var  loading  =  ".loading<?php echo $result_blog['id'];  ?>";
+  var urlajax="<?php echo U('/Admin/Index/turn_comment_ajax'); ?>";
+  var page=$(this).attr('page');
+  var wid=$(this).attr('wid');
+   var suid="#submit_comment<?php echo $result_blog['id'];  ?>";
+   $.ajax({
+              type:'post',
+              url:urlajax,
+              data:{'wid':wid,'page':page},
+              datatype:'html',
+              beforeSend:function(){
+             $(loading).show();
+            $(suid).parent().nextAll().remove();
+              },
+              success:function(data){
+        
+            $(suid).parent().after(data);
+
+          
+              },
+              complete: function(){
+     
+                 $(loading).hide();
+              }
+            });
+
+
+
+
+
+ }); 
+    // ==============下一页缓冲结束================
+</script>
+  
+   
+
+
+        <!-- 评论的下拉框结束 -->
+
+  </div>
+</div>
+<!-- 评论结束 -->
+  <!-- Button trigger modal -->
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal<?php echo $result_blog['id'];  ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">转发<font color="red"><?php echo $result_blog['username'];  ?></font>的博客:</h4>
+                          </div>
+            <form action="<?php echo U('/Admin/Index/turn');?>" method="post">   
+                          <div class="modal-body" >
+                               <p>原创微博:
+                                <?php                    
+                               echo   check_Url( $result_blog['isturn']['content']);
+                              ?>
+                              </p>
+                              <p>
+                           <textarea name="content" rows="6" id="zhuanfa_editer" style="width: 100%;font-size:15px;resize: none;">//@<?php echo $result_blog['username'];
+                           echo " "; 
+                           echo check_Url($result_blog['content']); ?></textarea>
+                              </p>
+                              </div>
+                          <div class="modal-footer">
+                                   <label style="margin-right:50px;">
+                       <input type="checkbox" name="comment">同时评论
+                           </label>
+                    <input type="hidden" name="nid" value="<?php echo $result_blog['id']; ?>">
+                    <input type="hidden" name="tid" value="<?php echo $result_blog['isturn']['id']; ?>">
+                            <button type="submit" class="btn btn-info" >转发</button>
+                            
+                          </div>
+
+              </form>    
+                    </div>
+                  </div>
+              </div>
+              <!-- model -->
+
+ <!--    ================转发结束================= -->
+    <?php }}?>
+<!-- <script type="text/javascript">
+ var editor = new Simditor({
+    textarea: $('#zhuanfa_editer')
+
+    //optional options
+  });
+</script> -->
+
+  
+
+
+      <script src="/Public/qqface/lib/script/jquery.min.js"></script>
+      <script src="/Public/qqface/lib/script/highlight.pack.js"></script>
+      <script src="/Public/qqface/lib/script/jquery.mousewheel-3.0.6.min.js"></script>
+      <script src="/Public/qqface/lib/script/jquery.mCustomScrollbar.min.js"></script>
+      <script src="/Public/qqface/dist/js/jquery.emoji.min.js"></script>
+          <!-- qqface(表情) -->
+          <script type="text/javascript" src="/Public/js/qqface.js"></script>
+            <script type="text/javascript" src="/Public/Uploadify/jquery.uploadify.min.js"></script>
+
+        <script type="text/javascript" src="/Public/js/uploadpicture.js"></script>
+<!-- 这个是图片的缩放处理 -->
+      <script type="text/javascript">
+      $(function(){
+
+        $('.amplify').click(function(){
+         if ($(this).html()=='收起') {
+             $(this).parent().next().css({'width':'200px','height':'200px'});
+              $(this).html('展开');
+
+         }else{
+       
+       $(this).parent().next().css({'width':'300px','height':'300px'});
+          $(this).html('收起');
+          }
+        });
+        
+
+      // $('.amplify').click(function(){
+
+      //   this.toggle(
+      //   function(){
+      //  $(this).parent().next().css({'width':'300px','height':'300px'});
+      // },function(){
+      //  $(this).parent().next().css({'width':'200px','height':'200px'});
+      // }
+      // );
+      // });
+
+
+
+      });
+      </script>
+ 
+	</div>

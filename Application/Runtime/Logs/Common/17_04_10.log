@@ -1,0 +1,54 @@
+[ 2017-04-10T13:49:47+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载模块:Rjsdcctrl
+
+[ 2017-04-10T13:58:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T13:58:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T13:58:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T14:17:54+08:00 ] 192.168.191.3 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T14:19:01+08:00 ] 192.168.191.3 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T14:30:08+08:00 ] 192.168.191.3 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-10T18:44:31+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+ERR: 无法加载模块:Rjsdcctrl
+
+[ 2017-04-10T19:10:43+08:00 ] 192.168.191.3 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+ERR: 无法加载模块:Favicon
+

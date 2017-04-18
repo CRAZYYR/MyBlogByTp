@@ -1,0 +1,108 @@
+[ 2017-03-10T10:47:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-10T11:44:45+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-10T12:10:41+08:00 ] 127.0.0.1 /uploads/com/weibo/face/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-10T12:11:47+08:00 ] 127.0.0.1 /uploads/com/weibo/face/back.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-10T14:42:27+08:00 ] 127.0.0.1 /uploads/6/com/weibo/face/2017-03-10/58c24a229b950.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-10T14:42:27+08:00 ] 127.0.0.1 /uploads/6/com/weibo/face/2017-03-10/58c24a229b950.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-03-10T14:50:23+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:27:04+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-10T16:27:11+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:32:51+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:33:57+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:37:21+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:39:12+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T16:41:54+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T17:03:43+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T17:20:46+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-10T17:34:29+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-10T17:35:06+08:00 ] 127.0.0.1 /Public/css/demo/images/unchecked.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Public
+

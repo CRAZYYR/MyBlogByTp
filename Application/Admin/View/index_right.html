@@ -1,0 +1,72 @@
+<div class="col-md-3">
+	<!-- 图片 -->
+	<div class="row">
+	<span class="col-md-6">
+        <?php 
+  
+	$user_info=M('userinfo')->where(array('uid'=>session('uid')))->find();
+   ?>
+
+	<img style="width: 100px;height: 100px;" src="/uploads/<?php echo $user_info['face80']; ?>" alt="..." class="img-rounded"></span>
+	<span class="col-md-6 text-center"><h3>博客网</h3></span>
+</div>
+	<!-- 关注粉丝和微博 -->
+
+	<div class="row" style="margin-top: 10px;">
+
+<div class="bs-example" data-example-id="simple-table">
+    <table class="table">
+      <thead>
+        <tr class="active">
+          <th><?php echo $user_info['follow']; ?></th>
+          <th><?php echo $user_info['fans']; ?></th>
+          <th><?php echo $user_info['weibo']; ?></th>
+        </tr>
+      </thead>  
+        <tr class="success">
+         
+          <td >关注</td>
+          <td>粉丝</td>
+          <td>微博</td>
+        </tr>
+        <tr>
+    </table>
+  </div>
+	
+
+	</div>
+
+
+		<div style="margin-top: 20px;">
+
+<h4>可能感兴趣的人:</h4>
+</div>
+	<div style="margin-top: 5px;" class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+    <div class="panel-body">
+    Panel content
+  </div>
+    <div class="panel-body">
+    Panel content
+  </div>
+   </div>
+	<div style="margin-top: 20px;">
+<h4>公告栏:</h4>
+</div>
+	<div style="margin-top: 5px;" class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+    <div class="panel-body">
+    Panel content
+  </div>
+    <div class="panel-body">
+    Panel content
+  </div>
+  
+</div>
+
+
+	</div>

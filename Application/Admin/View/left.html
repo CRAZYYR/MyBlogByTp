@@ -1,0 +1,109 @@
+
+<div class="panel panel-default" id="left-top">
+
+  <div class="panel-body">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+  <a href="<?php echo U('/Admin/Index'); ?>">&nbsp首页</a>
+  </div>
+  <div class="panel-body">
+<span class="glyphicon glyphicon-paste" aria-hidden="true"></span>
+<a href="#">&nbsp提到我的</a>
+  </div>
+<div class="panel-body">
+<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span><a href="#">&nbsp评论</a>
+
+  </div>
+    <div class="panel-body">
+<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="#">&nbsp私信</a>
+  </div>
+   <div class="panel-body">
+   <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><a href="#">&nbsp收藏</a>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading text-center"><h5>好友分组</h5></div>
+  <div class="panel-body">
+    
+    <?php 
+     
+ 
+      $groups= M('group')->where(array('uid'=>session('uid')))->select();
+      
+ ?>
+   <div class="panel-body">
+<!-- ====列表开始==== -->
+   <?php
+foreach($groups as $group) {
+     ?>
+   
+<div style="margin-top:10px;">
+<a class="btn" role="button" data-toggle="collapse" href="#<?php echo $group['name']; ?>" aria-expanded="false" aria-controls="<?php echo $group['name']; ?>">
+
+==<?php echo $group['name']; $gid=$group['id'];?>==:
+
+</a>
+</div>
+<div class="collapse" id="<?php echo $group['name']; ?>">
+    
+<table class="table table-hover">
+  
+      <tbody>
+      <?php $follow_info=M('follow')->where(array('gid'=>$gid))->field('follow')->select();?>
+       
+       <?php if($follow_info){
+         foreach($follow_info as $k=>$v){
+         $info=M('userinfo')->where(array('uid'=>$v['follow']))->field('username')->find();
+       ?>
+
+           <tr><td><a href="<?php echo U('/Admin/User/'.$info['username']); ?>"><?php echo $info['username']; ?></a></td> </tr>
+           <tr><td></td></tr>
+      <?php }}else{ ?>
+          <tr><td><font color="red">该分组为空!</font></td> </tr>
+          <?php }?>
+       
+
+
+      </tbody>
+    </table>
+   
+
+</div>
+<?php } ?>
+<!-- ====列表结束==== -->
+  </div>
+  
+
+
+   <div class="panel-body">
+    
+
+ 
+<!-- 测试 -->
+<script type="text/javascript">
+var add_group_url="<?php echo U('/Admin/Common/addGroup'); ?>";
+</script>
+ <!--=====democratic======-->
+<a class="btn btn-info btn-sm" id='create_group'>创建新分组</a>
+<a class="btn btn-info btn-sm" id='delete_group'>删除分组</a>
+<div  id='add-group' hidden>
+    <form>
+
+        <div class='group-name' style="margin-top: 10px;">
+          <span>  <font color="red">分组名称：</font></span><input type="text" name='name' id='gp-name' placeholder="输入你的分组名！">
+        </div>
+        <div class='gp-btn-wrap' style="margin-top: 10px;">
+            <span class='add-group-sub btn btn-info btn-sm'>添加</span>
+            <span class='group-cencle btn btn-info btn-sm'>取消</span>
+        </div>
+  
+</form>     
+    </div>
+
+  </div>
+  
+      
+  </div>
+</div>
+
+

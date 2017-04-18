@@ -1,0 +1,49 @@
+
+<!-- 时间链接 -->
+	<link href="/Public/time/css/jquery-ui-1.10.1.css" rel="stylesheet">
+	<link href="/Public/time/css/latoja.datepicker.css" rel="stylesheet">	
+	<script src="/Public/js/jquery-ui-1.10.1.min.js"></script>
+	<!-- 时间连接结束 -->
+	<script>
+
+	$(function() {	
+		$( ".datepicker" ).datepicker({
+			inline: true,
+			showOtherMonths: true
+		});
+	});
+	</script>
+
+	<style>
+		body {
+			font: 100% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+			margin: 0;
+			background:fff;
+		}
+
+		.no-show {
+			display: none;
+		}
+
+		h2 {
+			margin: 0 0 .5em;
+			padding: 0;
+			color: #555;
+			font-size: 1.3em;
+		}
+
+
+		/* clearfix short For modern browsers */
+		.cf:before,
+		.cf:after { content:""; display:table; }
+		.cf:after { clear:both; }
+		/* For IE 6/7 (trigger hasLayout) */
+		.cf { zoom:1; }
+	
+	</style>
+
+			<div class="text-center">
+	
+					<div class="datepicker ll-skin-latoja"></div>
+			</div>
+

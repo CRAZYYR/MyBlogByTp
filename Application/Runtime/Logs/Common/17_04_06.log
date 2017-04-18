@@ -1,0 +1,54 @@
+[ 2017-04-06T09:28:35+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T10:16:28+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+ERR: 无法加载模块:Rjsdcctrl
+
+[ 2017-04-06T10:28:43+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T10:40:22+08:00 ] 127.0.0.1 /uploads/Array
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载模块:Uploads
+
+[ 2017-04-06T15:59:28+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T15:59:52+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T15:59:57+08:00 ] 192.168.191.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-04-06T21:29:44+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.148140s ]
+ERR: 无法加载模块:Rjsdcctrl
+
+[ 2017-04-06T21:56:14+08:00 ] 127.0.0.1 /rjsdcctrl?mac%3d2c600c763544%26ipv4%3d3315605164%26ipv61%3d0%26ipv62%3d0%26ipv63%3d0%26ipv64%3d0%26product%3d33554432%26mainver%3d67108864%26subver%3d1660944384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035997s ]
+ERR: 无法加载模块:Rjsdcctrl
+

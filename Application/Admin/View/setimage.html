@@ -1,0 +1,47 @@
+<div style="margin-top: 40px;" role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+		        <p>
+  
+		<div class="col-xs-4 col-xs-offset-4" class="form-group">
+		<!-- 1 -->
+		 <form class="form-horizontal" method="post" action="<?php echo U('/Admin/System/Setimage');  ?>">  
+			
+		 <img id="face-img" name="img" style="width: 200px;height: 200px;" src="
+		 <?php
+				if($user['face80']){
+				echo "/uploads/".$user['face80'];
+				}else{
+				echo '/Public/image/face.jpg';
+				}
+	
+		  ?>" >
+			   
+			 
+		<!-- 2 -->
+				  <div class="row" style="margin: 20px;">
+					<div class="form-group" >
+				    
+				    <input type="file" id="face" name="face">
+				   
+				 	 </div>
+
+				  </div>
+
+  <hr/>
+	 <input type="hidden" name="face180" value="">
+				  <input type="hidden" name="face80" value="">
+				   <input type="hidden" name="face50" value="">
+  		<!-- 3 -->
+			<div class="form-group"  style="margin: 20px;">
+			
+			 <button type="submit" class="btn btn-success">确定修改</button>
+		
+			</div>
+		<!-- 4 -->
+</form>
+	</div>
+
+
+
+	   </p>
+		      </div>
+

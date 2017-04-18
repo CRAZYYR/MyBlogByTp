@@ -1,0 +1,499 @@
+[ 2017-03-21T19:38:36+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0932s ]
+SQL: SELECT * FROM `hd_user` WHERE `account` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2017-03-21T19:38:40+08:00 ] 127.0.0.1 /Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.014702s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014947s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0344s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.201813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2017-03-21T19:38:53+08:00 ] 127.0.0.1 /index.php/Admin/System/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0025s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-03-21T19:38:58+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0036s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-03-21T19:38:58+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0034s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-03-21T19:39:00+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0026s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-03-21T19:39:03+08:00 ] 127.0.0.1 /index.php/Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0077s ]
+SQL: SELECT `username`,`truename`,`sex`,`location`,`constellation`,`intro`,`face180`,`face50`,`face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-03-21T19:39:05+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0029s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-03-21T19:39:10+08:00 ] 127.0.0.1 /index.php/Admin/Index/TestCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-03-21T19:40:56+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0039s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2017-03-21T19:42:21+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0030s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-03-21T19:43:11+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0081s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001967s ]
+
+[ 2017-03-21T19:43:13+08:00 ] 127.0.0.1 /index.php/Admin/Index/TestCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-03-21T19:43:16+08:00 ] 127.0.0.1 /index.php/Admin/Index/TestCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-03-21T19:43:42+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0069s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002313s ]
+
+[ 2017-03-21T19:44:02+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0028s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-03-21T19:44:06+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0083s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002631s ]
+
+[ 2017-03-21T19:44:30+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0079s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002039s ]
+
+[ 2017-03-21T19:45:08+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0029s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-03-21T19:46:13+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0052s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2017-03-21T19:46:21+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0070s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0008s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2017-03-21T19:50:28+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0052s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002119s ]
+
+[ 2017-03-21T19:51:29+08:00 ] 127.0.0.1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `hd_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0046s ]
+SQL: SELECT `face80` FROM `hd_userinfo` WHERE `uid` = 6 LIMIT 1   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
