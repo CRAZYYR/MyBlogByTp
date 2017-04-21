@@ -8,7 +8,7 @@
 <script src="/Public/jquery-3.1.1/jquery-3.1.1.js" type="text/javascript"></script>
 <script type="text/javascript">
 var checkUser="<?php echo U('/Home/Index/checkUser') ; ?>";
-var  checkImg="<?php echo U('/Home/Index/imgck') ; ?>";
+var  checkImg="<?php echo U('/Home/Index/index_imgck') ; ?>";
 </script>
 <script src="/Public/js/jquery.validate.js" type="text/javascript"></script>
 <script src="/Public/js/register.js" type="text/javascript"></script>

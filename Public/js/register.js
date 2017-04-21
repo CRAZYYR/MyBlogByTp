@@ -24,16 +24,16 @@ $(function(){
 				}
 			},
 			//图片
-			img:{		
+			image:{		
 			required:true,
 			remote: {
 			url: checkImg,     //后台处理程序
 			type:"post",               //数据发送方式
 			dataType:'json',           //接受数据格式   
 			data: {                     //要传递的数据
-			img: function(){
-			return $('#img').val();
-				}
+			img: function() {
+			return $('#image').val();
+						}
 				  }
 					}
 			},
@@ -51,10 +51,7 @@ $(function(){
 			}
     },
     messages: {
-    	img:{
-    		required:'',
-    		remote:''
-    	},
+  
     	user:{
 
     		remote:'帐号已存在！',

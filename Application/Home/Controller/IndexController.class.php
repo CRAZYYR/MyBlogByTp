@@ -51,18 +51,16 @@ class IndexController extends Controller {
     /**
      * 图片检查开始
      */
-    function imgck(){
+ function index_imgck(){
     	
      $img=I('post.img');
-     dump($img);
 		$verify = new \Think\Verify();
-		if (!$verify->check($img, $id = '')) {
-			echo '亲，验证码错误！';
+   
+		if (!$verify->check($img, $id)) { 
       echo 'false';
 		}else{
 		 echo 'true';
 		}
-		 
 
     }
     /**
